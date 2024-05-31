@@ -1,0 +1,14 @@
+# Exported from Render on 2024-05-31T15:44:18Z
+services:
+- type: web
+  name: whatsappbot
+  runtime: python
+  repo: https://github.com/Soundsphe/whatsappbot
+  plan: free
+  envVars:
+  - key: TOKEN
+    sync: false
+  region: singapore
+  buildCommand: pip install -r requirements.txt
+  startCommand: linkbot.py
+version: "1"
