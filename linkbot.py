@@ -191,4 +191,5 @@ def main() -> None:
     application.run_polling()
 
 if __name__ == '__main__':
+    PORT = int(os.environ.get('PORT', 8443))
     main()
